@@ -1,0 +1,52 @@
+@import "variables";
+
+.download {
+  padding: 0 3.5rem;
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    .card {
+      padding: 3rem;
+      // background-color: #333;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      gap: 1.5rem;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+      &__logo {
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+      }
+      &__dots {
+        width: 100%;
+        margin-top: 2rem;
+      }
+      h3 {
+        color: $neutral-dark-blue;
+        gap: 1rem;
+      }
+      p {
+        color: $neutral-gray-blue;
+        margin-top: -1rem;
+        font-size: 1.6rem;
+      }
+      &__button {
+        background-color: $primary-color-1;
+        border: 0;
+        cursor: pointer;
+        padding: 1rem 3rem;
+        margin-top: 1rem;
+        border-radius: 5px;
+        color: white;
+        font-weight: $font-weight-500;
+      }
+    }
+  }
+}
