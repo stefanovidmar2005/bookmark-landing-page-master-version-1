@@ -57,6 +57,11 @@ h6 {
   font-family: "Rubik", sans-serif;
   padding: 0 2rem;
 }
+@media (min-width: 1000px) {
+  .header {
+    padding: 0 10rem;
+  }
+}
 .header nav {
   display: flex;
   align-items: center;
@@ -67,12 +72,59 @@ h6 {
 .header nav ul {
   display: none;
 }
+@media (min-width: 1000px) {
+  .header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+}
+@media (min-width: 1000px) and (min-width: 1000px) {
+  .header nav ul a {
+    text-decoration: none;
+    color: hsl(229deg, 31%, 21%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    transition: all 0.25s ease-in-out;
+  }
+}
+@media (min-width: 1000px) and (min-width: 1000px) {
+  .header nav ul a:hover {
+    color: hsl(0deg, 94%, 66%);
+  }
+}
+@media (min-width: 1000px) and (min-width: 1000px) {
+  .header nav ul .active {
+    background-color: hsl(0deg, 94%, 66%);
+    padding: 1rem 2.5rem;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 2px solid transparent;
+  }
+}
+@media (min-width: 1000px) and (min-width: 1000px) {
+  .header nav ul .active:hover {
+    background-color: #fff;
+    border: 2px solid hsl(0deg, 94%, 66%);
+  }
+}
 .header nav .header__hamburger {
   position: relative;
   height: 3px;
   width: 2.3rem;
   background-color: #000;
   cursor: pointer;
+}
+@media (min-width: 1000px) {
+  .header nav .header__hamburger {
+    display: none;
+  }
 }
 .header nav .header__hamburger::before {
   content: " ";
@@ -95,6 +147,21 @@ h6 {
 .header__images {
   position: relative;
 }
+@media (min-width: 1000px) {
+  .header__images {
+    position: static;
+  }
+}
+@media (min-width: 1000px) {
+  .header__flex {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+    gap: 10.5rem;
+  }
+}
 .header__svg {
   transform: scale(1.05);
   width: 100rem;
@@ -105,17 +172,36 @@ h6 {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (min-width: 1000px) {
+  .header__svg {
+    transform: scale(1.3);
+    margin: 0;
+    margin-top: 5rem;
+  }
+}
 .header__content {
   margin-top: 6rem;
   padding: 0 2rem;
   text-align: center;
   font-size: 1.5rem;
 }
+@media (min-width: 1000px) {
+  .header__content {
+    text-align: left;
+    padding: 0;
+  }
+}
 .header__content-heading {
   line-height: 1.4;
   text-transform: capitalize;
   color: hsl(229deg, 31%, 21%);
   margin-bottom: 2rem;
+}
+@media (min-width: 1000px) {
+  .header__content-heading {
+    line-height: 1.2;
+    font-size: 3.5rem;
+  }
 }
 .header__content-description {
   color: hsl(229deg, 8%, 60%);
@@ -127,22 +213,43 @@ h6 {
   justify-content: center;
   gap: 2rem;
 }
+@media (min-width: 1000px) {
+  .header__buttons {
+    justify-content: flex-start;
+  }
+}
 .header__buttons .btn {
   padding: 1rem 1rem;
   border: 0;
   cursor: pointer;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 2px solid transparent;
 }
 .header__buttons-1 {
   color: #fff;
   background-color: hsl(231deg, 69%, 60%);
+  transition: all 0.25s ease-in-out;
+}
+@media (min-width: 1000px) {
+  .header__buttons-1:hover {
+    background-color: #fff;
+    border: 2px solid hsl(231deg, 69%, 60%);
+    color: hsl(231deg, 69%, 60%);
+  }
 }
 .header__buttons-2 {
   background-color: #f7f7f7;
   color: hsl(229deg, 31%, 21%);
+  transition: all 0.25s ease-in-out;
+}
+.header__buttons-2:hover {
+  border: 2px solid #000;
 }
 
+main .features__btn {
+  display: none;
+}
 main .mt-8 {
   margin-top: 8rem;
 }
@@ -155,14 +262,30 @@ main .features {
   padding: 0 3rem;
   padding-top: 14rem;
 }
+@media (min-width: 1000px) {
+  main .features {
+    padding-top: 18rem;
+  }
+}
 main .features h2 {
   color: hsl(229deg, 31%, 21%);
   margin-bottom: 1.5rem;
+}
+@media (min-width: 1000px) {
+  main .features h2 {
+    font-size: 3rem;
+  }
 }
 main .features p {
   color: hsl(229deg, 8%, 60%);
   font-size: 1.5rem;
   margin-bottom: 4rem;
+}
+@media (min-width: 1000px) {
+  main .features p {
+    padding: 0 30rem;
+    margin-bottom: 5rem;
+  }
 }
 main .features__headers {
   display: flex;
@@ -173,10 +296,23 @@ main .features__headers {
   margin-top: 2.5rem;
   margin-bottom: 9rem;
 }
+@media (min-width: 1000px) {
+  main .features__headers {
+    flex-direction: row;
+    border-bottom: 1px solid hsl(229deg, 8%, 60%);
+    margin-inline: 18rem;
+  }
+}
 main .features__headers h4:first-child {
   border-top: 1px solid hsl(229deg, 8%, 60%);
   position: relative;
   color: hsl(229deg, 31%, 21%);
+}
+@media (min-width: 1000px) {
+  main .features__headers h4:first-child {
+    border-top: 0;
+    border-bottom: 4px solid hsl(0deg, 94%, 66%);
+  }
 }
 main .features__headers h4:first-child::before {
   content: "";
@@ -187,12 +323,73 @@ main .features__headers h4:first-child::before {
   height: 4px;
   width: 50%;
 }
+@media (min-width: 1000px) {
+  main .features__headers h4:first-child::before {
+    display: none;
+  }
+}
 main .features__headers h4 {
   border-bottom: 1px solid hsl(229deg, 8%, 60%);
   width: 100%;
   padding: 2rem;
   font-weight: 400;
   color: hsl(229deg, 8%, 60%);
+}
+@media (min-width: 1000px) {
+  main .features__headers h4 {
+    border: 0;
+  }
+}
+@media (min-width: 1000px) {
+  main .features__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 15rem;
+    padding: 0 4.5rem;
+  }
+  main .features__flex img {
+    transform: scale(0.9);
+    margin-top: -2rem;
+  }
+}
+@media (min-width: 1000px) {
+  main .features__flex-content {
+    text-align: left;
+  }
+}
+@media (min-width: 1000px) and (min-width: 1000px) {
+  main .features__flex-content p {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (min-width: 1000px) and (min-width: 1000px) {
+  main .features__flex-content h2 {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1000px) and (min-width: 1000px) {
+  main .features__flex-content .features__btn {
+    display: initial;
+    background-color: hsl(231deg, 69%, 60%);
+    margin-top: 3rem;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    border: 2px solid transparent;
+  }
+}
+@media (min-width: 1000px) {
+  main .features__flex-content .features__btn:hover {
+    background-color: #fff;
+    color: hsl(231deg, 69%, 60%);
+    border: 2px solid hsl(231deg, 69%, 60%);
+  }
 }
 
 .download {
