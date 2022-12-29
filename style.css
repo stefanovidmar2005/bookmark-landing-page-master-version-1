@@ -319,4 +319,50 @@ main .features__headers h4 {
   transition: all 0.2s ease-in-out;
 }
 
+.contact {
+  padding: 7rem 3.5rem;
+  text-align: center;
+  background-color: hsl(231deg, 69%, 60%);
+  color: #fff;
+}
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.contact__content h4 {
+  font-size: 1.4rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.contact__content h2 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.contact__form input,
+.contact__form button {
+  width: 100%;
+  padding: 1rem 2.3rem;
+  border: 0;
+  border-radius: 5px;
+}
+.contact__form ::placeholder {
+  color: hsl(229deg, 8%, 60%);
+  font-size: 1.6rem;
+}
+.contact__form button {
+  cursor: pointer;
+  background-color: hsl(0deg, 94%, 66%);
+  color: #fff;
+  font-weight: 500;
+}
+
 /*# sourceMappingURL=style.css.map */
