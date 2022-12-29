@@ -365,4 +365,52 @@ main .features__headers h4 {
   font-weight: 500;
 }
 
+.footer {
+  background-color: hsl(229deg, 31%, 21%);
+  padding: 0 3rem;
+}
+.footer__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.footer__flex ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  padding: 0;
+}
+.footer__flex ul li {
+  list-style-type: none;
+}
+.footer__flex ul a {
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+}
+.footer__flex .svg {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.footer__flex .footer__svg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(218deg) brightness(104%) contrast(101%);
+}
+.footer__logo-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  gap: 4.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
