@@ -269,6 +269,8 @@ main .features__headers h4 {
 }
 .faq__questions .question__flex p {
   color: hsl(229deg, 31%, 21%);
+  text-align: left;
+  font-size: 1.6rem;
 }
 .faq__questions .question__flex span {
   cursor: pointer;
