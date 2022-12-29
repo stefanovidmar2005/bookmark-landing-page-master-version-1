@@ -1,9 +1,12 @@
 @import "variables";
-
+@import "mixin";
 .faq {
   padding: 0 3.5rem;
   margin-top: 14rem;
   text-align: center;
+  @include for-desktop() {
+    padding: 0 30rem;
+  }
   &__content {
     h2 {
       color: $neutral-dark-blue;
@@ -22,7 +25,7 @@
       align-items: center;
       padding: 1.8rem 0;
       border-bottom: 1px solid $neutral-gray-blue;
-      margin-bottom: 2rem;
+      margin-bottom: 1.7rem;
       transition: all 0.3s ease-in-out;
       p {
         color: $neutral-dark-blue;
@@ -33,6 +36,15 @@
         cursor: pointer;
         transition: all 0.3s ease-in-out;
       }
+    }
+    .ht {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: $neutral-gray-blue;
+      text-align: left;
+      line-height: 1.7;
+      border-bottom: 1px solid $neutral-gray-blue;
+      padding-bottom: 1rem;
     }
     .hiddentext1 {
       display: none;
@@ -72,6 +84,9 @@
     background-color: $primary-color-1;
     color: #fff;
     border-radius: 5px;
+    @include for-desktop() {
+      margin-bottom: 15rem;
+    }
   }
 }
 
