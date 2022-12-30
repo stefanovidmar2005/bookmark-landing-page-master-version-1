@@ -16,6 +16,9 @@
       margin-bottom: 15rem;
       margin-top: 2rem;
     }
+    @include for-desktop() {
+      margin-bottom: 18rem;
+    }
     .card {
       padding: 3rem;
       // background-color: #333;
@@ -35,6 +38,9 @@
       &__3 {
         @include for-desktop() {
           margin-top: 10rem;
+        }
+        @include for-lrg-desktop() {
+          margin-top: 13rem;
         }
       }
       &__logo {

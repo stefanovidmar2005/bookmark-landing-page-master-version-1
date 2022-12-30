@@ -13,6 +13,9 @@
     justify-content: space-between;
     padding: 0 1rem;
     padding-top: 4rem;
+    @include for-lrg-desktop() {
+      padding-top: 5rem;
+    }
 
     ul {
       display: none;
@@ -116,6 +119,11 @@
       margin: 0;
       margin-top: 5rem;
     }
+    @include for-lrg-desktop() {
+      margin: 0;
+      margin-top: 5rem;
+      transform: scale(1.25);
+    }
   }
   &__content {
     margin-top: 6rem;
@@ -135,10 +143,17 @@
         line-height: 1.2;
         font-size: 3.5rem;
       }
+      @include for-lrg-desktop() {
+        font-size: 5rem;
+      }
     }
     &-description {
       color: $neutral-gray-blue;
       margin-bottom: 3rem;
+      @include for-lrg-desktop() {
+        font-size: 2rem;
+        line-height: 1.7;
+      }
     }
   }
   &__buttons {

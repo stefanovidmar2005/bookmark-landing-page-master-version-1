@@ -19,6 +19,10 @@ main {
     @include for-desktop() {
       padding-top: 18rem;
     }
+    @include for-lrg-desktop() {
+      padding: 0 15rem;
+      padding-top: 18rem;
+    }
     h2 {
       color: $neutral-dark-blue;
       margin-bottom: 1.5rem;
