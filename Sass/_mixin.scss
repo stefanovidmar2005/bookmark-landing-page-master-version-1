@@ -3,3 +3,8 @@
     @content;
   }
 }
+@mixin for-lrg-desktop {
+  @media (min-width: 1300px) {
+    @content;
+  }
+}

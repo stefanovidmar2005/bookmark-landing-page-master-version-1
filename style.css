@@ -577,6 +577,11 @@ main .features__headers h4 {
   background-color: hsl(231deg, 69%, 60%);
   color: #fff;
 }
+@media (min-width: 1000px) {
+  .contact {
+    padding: 6rem 35rem;
+  }
+}
 .contact__content {
   display: flex;
   flex-direction: column;
@@ -589,9 +594,21 @@ main .features__headers h4 {
   letter-spacing: 5px;
   text-transform: uppercase;
 }
+@media (min-width: 1000px) {
+  .contact__content h4 {
+    margin-bottom: 2rem;
+  }
+}
 .contact__content h2 {
   margin-bottom: 2rem;
   font-size: 2.5rem;
+}
+@media (min-width: 1000px) {
+  .contact__content h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
 }
 .contact__form {
   display: flex;
@@ -599,12 +616,23 @@ main .features__headers h4 {
   align-items: center;
   gap: 1.5rem;
 }
+@media (min-width: 1000px) {
+  .contact__form {
+    flex-direction: row;
+  }
+}
 .contact__form input,
 .contact__form button {
   width: 100%;
   padding: 1rem 2.3rem;
   border: 0;
   border-radius: 5px;
+}
+@media (min-width: 1000px) {
+  .contact__form input,
+  .contact__form button {
+    width: initial;
+  }
 }
 .contact__form ::placeholder {
   color: hsl(229deg, 8%, 60%);
@@ -615,6 +643,15 @@ main .features__headers h4 {
   background-color: hsl(0deg, 94%, 66%);
   color: #fff;
   font-weight: 500;
+  border: 2px solid transparent;
+  transition: all 0.25s ease-in-out;
+}
+@media (min-width: 1000px) {
+  .contact__form button:hover {
+    border: 2px solid hsl(0deg, 94%, 66%);
+    background-color: #fff;
+    color: hsl(0deg, 94%, 66%);
+  }
 }
 
 .footer {
